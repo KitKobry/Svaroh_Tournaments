@@ -78,3 +78,29 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+/* Ширина скролбару */
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+/* Фон */
+::-webkit-scrollbar-track{
+    background: #050816;
+}
+
+/* Повзунок */
+::-webkit-scrollbar-thumb{
+    background: #07183d;
+
+    border-radius: 10px;
+
+    border: 2px solid #050816;
+}
+
+/* Наведення */
+::-webkit-scrollbar-thumb:hover{
+    background: #0f52ba;
+}
+
+
