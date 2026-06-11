@@ -1,0 +1,112 @@
+main{
+    max-width: 1400px;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 20px;
+
+    box-sizing: border-box;
+}
+
+/* ===== Сітка команд ===== */
+
+.teams-grid{
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+}
+
+/* ===== Картка команди ===== */
+
+.team-card{
+    background-color: #07183d;
+
+    border: 1px solid #0f52ba;
+    border-radius: 10px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    text-decoration: none;
+    color: white;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.team-card:hover{
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 15px rgba(15,82,186,0.4);
+}
+
+/* ===== Логотип ===== */
+
+.team-card img{
+    width: 100%;
+    max-width: 220px;
+
+    height: 220px;
+
+    object-fit: contain;
+
+    border-radius: 8px;
+}
+
+/* ===== Назва команди ===== */
+
+.team-card h3{
+    margin-top: 15px;
+    margin-bottom: 0;
+
+    color: white;
+
+    word-wrap: break-word;
+}
+
+/* ===== Адаптивність ===== */
+
+@media (max-width: 900px){
+
+    main{
+        padding: 15px;
+    }
+
+    .teams-grid{
+        grid-template-columns:
+            repeat(auto-fit, minmax(200px, 1fr));
+
+        gap: 15px;
+    }
+
+    .team-card{
+        padding: 15px;
+    }
+
+    .team-card img{
+        max-width: 180px;
+        height: 180px;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    .teams-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .team-card img{
+        max-width: 220px;
+        height: 220px;
+    }
+
+}
