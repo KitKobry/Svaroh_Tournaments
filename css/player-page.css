@@ -131,6 +131,12 @@ main{
 
 .achievements ul{
     line-height: 2;
+    list-style-type: none;
+}
+
+.achievements li{
+    display: inline;
+    padding-right: 10px;
 }
 
 .team-history{
