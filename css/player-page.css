@@ -39,9 +39,10 @@ main{
 }
 
 .player-details{
+    flex: 1;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .player-details h1{
@@ -69,6 +70,39 @@ main{
     font-weight: bold;
 
     font-size: 1.1rem;
+}
+
+.player-stats{
+    width: 350px;
+
+    background-color: #0a214f;
+
+    border: 1px solid #0f52ba;
+    border-radius: 10px;
+
+    padding: 20px;
+
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player-stats h3{
+    margin-top: 0;
+
+    text-align: center;
+
+    border-bottom: 1px solid #f4c542;
+
+    padding-bottom: 10px;
+
+    margin-bottom: 15px;
+}
+
+.player-stats p{
+    margin: 12px 0;
 }
 
 .achievements{
@@ -193,6 +227,15 @@ main{
         width: 100%;
         max-width: 300px;
         height: auto;
+    }
+
+    .player-details{
+        text-align: center;
+    }
+
+    .player-stats{
+        width: 100%;
+        min-width: auto;
     }
 
 }
