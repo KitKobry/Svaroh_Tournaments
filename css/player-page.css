@@ -72,6 +72,11 @@ main{
     font-size: 1.1rem;
 }
 
+.quote{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
 .player-stats{
     width: 350px;
 
