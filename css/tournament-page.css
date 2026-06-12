@@ -61,6 +61,11 @@ main{
     padding-left: 20px;
 }
 
+.tournament-details a{
+    text-decoration: none;
+    color: #f4c542;
+}
+
 /* ===== Статуси ===== */
 
 .status{

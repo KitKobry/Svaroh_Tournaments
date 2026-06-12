@@ -1,0 +1,62 @@
+main{
+    padding: 20px;
+}
+
+.schedule-card{
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    background-color: #07183d;
+
+    border: 1px solid #0f52ba;
+    border-radius: 10px;
+
+    padding: 30px;
+
+    color: white;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.schedule-card h2{
+    margin-top: 0;
+
+    text-align: center;
+
+    border-bottom: 1px solid #f4c542;
+
+    padding-bottom: 15px;
+}
+
+.coming-soon{
+    text-align: left;
+
+    font-size: 1.1rem;
+
+    color: #dbeafe;
+
+    margin: 40px 0;
+}
+
+@media (max-width: 768px){
+
+    main{
+        padding: 10px;
+    }
+
+    .schedule-card{
+        width: 100%;
+        min-height: 250px;
+    }
+
+    .schedule-card h2{
+        font-size: 1.5rem;
+    }
+
+    .coming-soon{
+        font-size: 1rem;
+        margin: 25px 0;
+    }
+
+}
