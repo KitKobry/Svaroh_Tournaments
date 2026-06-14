@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="../images/svaroh_esports_logo.png">
+        <title>Сварог Esports</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/ratings.css">
+        <script src="https://kit.fontawesome.com/2337b76880.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Сварог Esports</h1>
+        </header>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Домівка</a></li>
+                <li><a class="active" href="team-ratings.html">Рейтинг (BETA)</a></li>
+                <li><a href="../tournaments/tournaments.html">Турніри</a></li>
+                <li><a href="../teams/teams.html">Команди</a></li>
+                <li><a href="../players/players.html">Гравці</a></li>
+                <li><a href="../schedule/schedule.html">Розклад</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <div class="rating-tabs">
+
+                <a href="team-ratings.html"
+                class="rating-tab active">
+                    Команди
+                </a>
+
+                <a href="ratings.html"
+                class="rating-tab">
+                    Гравці
+                </a>
+
+            </div>
+
+            <section class="ratings-container">
+
+                <h2 class="rating-title">
+
+                    Рейтинг Команд (BETA)
+
+                    <span class="info-tooltip">
+
+                        <i class="fa-solid fa-circle-info"></i>
+
+                        <span class="tooltip-text">
+
+                            Виграний турнір: +1000
+
+                            <br><br>
+
+                            MVP гравець команди: +200 (тільки MVP поточного року)
+
+                            <br><br>
+
+                            Виграний матч: + 100
+
+                            <br><br>
+
+                            Не АФК (Участь в останньому турнірі): +50
+
+                            <br><br>
+
+                            Останній результат:
+
+                            <br>
+
+                            Виграний турнір: +200
+
+                            <br>
+
+                            2 Місце: +100
+
+                            <br>
+
+                            3 Місце: +50
+
+                        </span>
+
+                    </span>
+
+                </h2>
+
+                <div class="ranking-list">
+
+                    <div class="ranking-player">
+
+                        <div class="ranking-row">
+
+                            <div class="ranking-place">
+                                1
+                            </div>
+
+                            <div class="ranking-player-info">
+
+                                <img src="../images/Невідомо.png"
+                                    alt="Невідомо">
+
+                                <span>Команда</span>
+
+                            </div>
+
+                            <div class="ranking-points">
+                                0 Оч.
+                            </div>
+
+                        </div>
+
+                        <div class="ranking-expanded">
+
+                            <div class="ranking-buttons">
+
+                                <a href="#">
+                                    Профіль
+                                </a>
+
+                                <button class="details-btn">
+                                    Деталі рейтингу
+                                </button>
+
+                            </div>
+
+                            <div class="ranking-details">
+
+                                <div class="detail-card">
+                                    <strong>Виграно турнірів</strong>
+                                    <p>0 Оч.</p>
+                                </div>
+
+                                <div class="detail-card">
+                                    <strong>MVP</strong>
+                                    <p>0 Оч.</p>
+                                </div>
+
+                                <div class="detail-card">
+                                    <strong>Виграно матчів</strong>
+                                    <p>0 Оч.</p>
+                                </div>
+
+                                <div class="detail-card">
+                                    <strong>Не АФК</strong>
+                                    <p>0 Оч.</p>
+                                </div>
+
+                                <div class="detail-card">
+                                    <strong>Останній результат</strong>
+                                    <p>0 Оч.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+            </section>
+        </main>
+
+        <footer>
+            Сварог © Усі права застережено.
+            <a href="https://discord.gg/ay7gnPxrTN">Discord</a>
+        </footer>
+        <script src="../scripts/ratings.js"></script>
+    </body>
+</html>
