@@ -145,6 +145,7 @@ img{
 
 #searchResults{
     position: absolute;
+    padding: 5px 0;
 
     top: 110%;
     left: 0;
@@ -164,6 +165,8 @@ img{
 .search-result{
     display: block;
 
+    text-align: left !important;
+
     padding: 12px 15px;
 
     color: white;
@@ -177,6 +180,17 @@ img{
 
 .search-result:hover{
     background-color: #12306e;
+}
+
+.search-empty{
+    padding: 15px;
+
+    text-align: left;
+
+    color: #dbeafe;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
 }
 
 @media (max-width: 900px){
