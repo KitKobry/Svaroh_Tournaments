@@ -77,6 +77,30 @@ main{
     font-style: italic;
 }
 
+.player-ranking{
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.player-ranking span{
+    color: #f4c542;
+
+    font-size: 1.4rem;
+
+    margin-right: 5px;
+}
+
+.player-ranking:hover{
+    color: #42a5f5;
+}
+
 .player-stats{
     width: 350px;
 
