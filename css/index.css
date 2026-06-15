@@ -110,6 +110,7 @@ main{
 }
 
 @media (max-width: 1200px){
+
     main{
         grid-template-columns: 1fr;
     }
@@ -117,4 +118,39 @@ main{
     .news-card{
         grid-row: auto;
     }
+
+    .card{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card-content{
+        width: 100%;
+    }
+
+    .tournament-poster{
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px){
+
+     main{
+        padding: 10px;
+    }
+
+    .card{
+        padding: 15px;
+    }
+
+    header h1{
+        font-size: 2rem;
+    }
+
+    .tournament-poster{
+        max-width: 280px;
+    }
+
 }
