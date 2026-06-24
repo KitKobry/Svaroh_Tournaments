@@ -1,9 +1,27 @@
 main{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
+    display: flex;
     gap: 20px;
     padding: 20px;
+}
+
+.left-column,
+.right-column{
+    flex: 1;
+}
+
+.left-column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-column{
+    display: flex;
+}
+
+.right-column .news-card{
+    width: 100%;
+    height: 100%;
 }
 .card{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -81,10 +99,10 @@ main{
     padding: 20px;
     color: white;
 
-    grid-row: span 2;
-
     display: flex;
     flex-direction: column;
+
+    height: 100%;
 }
 .news-card h2{
     text-align: center;
@@ -100,23 +118,93 @@ main{
     margin-top: 0;
 }
 .news-content{
-    overflow-y: auto;
-
     flex: 1;
-
     margin-top: 10px;
 
-    max-height: 600px;
+    overflow-y: auto;
+}
+
+.big-three-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.big-three-card{
+    background-color: #07183d;
+    border: 1px solid #0f52ba;
+    border-radius: 10px;
+
+    padding: 20px;
+
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.big-three-card:hover{
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 15px rgba(15,82,186,0.4);
+}
+
+.big-three-card h2{
+    text-align: center;
+
+    margin-top: 0;
+
+    border-bottom: 1px solid #f4c542;
+    padding-bottom: 10px;
+}
+
+.top-player{
+    display: flex;
+    align-items: center;
+
+    padding: 15px 0;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.place{
+    width: 40px;
+}
+
+.player-name{
+    flex: 1;
+}
+
+.rating{
+    color: #f4c542;
+    font-weight: bold;
+}
+
+.first{
+    color: gold;
+}
+
+.second{
+    color: silver;
+}
+
+.third{
+    color: #cd7f32;
+}
+
+.big-three-hint{
+    text-align: center;
+    margin-top: 20px;
+    color: #dbeafe;
 }
 
 @media (max-width: 1200px){
 
     main{
-        grid-template-columns: 1fr;
-    }
-
-    .news-card{
-        grid-row: auto;
+        flex-direction: column;
     }
 
     .card{
@@ -133,24 +221,4 @@ main{
         width: 100%;
         max-width: 300px;
     }
-}
-
-@media (max-width: 768px){
-
-     main{
-        padding: 10px;
-    }
-
-    .card{
-        padding: 15px;
-    }
-
-    header h1{
-        font-size: 2rem;
-    }
-
-    .tournament-poster{
-        max-width: 280px;
-    }
-
 }
