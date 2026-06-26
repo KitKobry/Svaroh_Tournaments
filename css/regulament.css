@@ -1,0 +1,82 @@
+main{
+    padding: 20px;
+}
+
+.regulation-card{
+    max-width: 1000px;
+    margin: 0 auto;
+
+    background-color: #07183d;
+    border: 1px solid #0f52ba;
+    border-radius: 10px;
+
+    padding: 35px;
+
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.regulation-card h2{
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #f4c542;
+    padding-bottom: 15px;
+}
+
+.regulation-text{
+    color: #dbeafe;
+
+    font-size: 1.05rem;
+    line-height: 1.8;
+
+    text-align: left;
+}
+
+.regulation-text > strong{
+    display: block;
+
+    margin-top: 30px;
+    margin-bottom: 12px;
+
+    color: #ffffff;
+    font-size: 1.15rem;
+}
+
+.regulation-text a{
+    color: #f4c542;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.regulation-text a:hover{
+    color: #ffd966;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px){
+
+    main{
+        padding: 10px;
+    }
+
+    .regulation-card{
+        padding: 20px;
+    }
+
+    .regulation-card h2{
+        font-size: 1.5rem;
+    }
+
+    .regulation-text{
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .regulation-text strong{
+        font-size: 1.1rem;
+    }
+
+}
